@@ -27,7 +27,7 @@ after_script:
   - docker images
 deploy:
   provider: script
-  script: bash .travis/update.sh "$image"
+  script: bash ../update.sh "$image"
   on:
     branch: master
 # vim:set et ts=2 sw=2:
