@@ -2,7 +2,7 @@
 
 This is a repository for Java Docker base images used in various diyfr (French) projects, requiring fonts
 
-OpenJdk 8/10/12 on alpine version, with fonts ttf-dejavu,ttf-ubuntu-font-family, TimeZone update capatibility and custom CA loader.  
+OpenJdk 8/12/13 on alpine version, with fonts ttf-dejavu,ttf-ubuntu-font-family, TimeZone update capatibility and custom CA loader.  
 
 Sample Dockerfile for you java app  in OpenJDK 8:  
 ```
