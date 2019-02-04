@@ -6,7 +6,7 @@ OpenJdk 8/12/13 on alpine version, with fonts ttf-dejavu,ttf-ubuntu-font-family,
 
 Sample Dockerfile for you java app  in OpenJDK 8:  
 ```
-FROM diyfr/openjdk8-alpine-fonts
+FROM diyfr/openjdk-alpine-fonts:8
 ENV LANG fr_FR.UTF-8
 ENV TZ=Europe/Paris
 ADD ./myCA.crt /usr/local/share/ca-certificates/myCA.crt
