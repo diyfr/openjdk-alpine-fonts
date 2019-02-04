@@ -25,6 +25,7 @@ script:
     )
 after_script:
   - docker images
+  - docker tag $image "$DOCKER_USERNAME/$image"
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push "$DOCKER_USERNAME/$image"
   
