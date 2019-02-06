@@ -10,7 +10,7 @@ FROM diyfr/openjdk-alpine-fonts:8
 ENV LANG fr_FR.UTF-8
 ENV TZ=Europe/Paris
 ADD ./myCA.crt /usr/local/share/ca-certificates/myCA.crt
-RUN update-ca-certificates
+RUN update-ca-certificates 2>/dev/null || true
 # Custom volumes
 RUN mkdir /logs
 RUN mkdir /config
